@@ -4,6 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="theme-color" content="#101126">
+<link rel="canonical" href="https://it.primeznews.com/crm">
 <title>Client CRM & Deal Tracker (2026) — SHARVIX Studio</title>
 <link rel="icon" href="../assets/favicon-32.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +21,21 @@
 @media(max-width:1210px){.analytics{grid-template-columns:repeat(2,minmax(0,1fr))}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.tabs{grid-template-columns:repeat(3,1fr)}.profile small{display:none}.datebox{display:none}}
 @media(max-width:800px){.layout{display:block}.side{position:fixed;z-index:35;transform:translateX(-105%);width:258px;transition:transform .2s}.layout.side-open .side{transform:none}.scrim{display:none;position:fixed;inset:0;background:#05061bb0;z-index:30}.layout.side-open .scrim{display:block}.mobile-open{display:block;border:0;font-size:19px;background:#f1ecff;border-radius:9px;padding:8px;color:#7042cc}.top{height:65px}.top-title h1{font-size:16px}.top-title p{font-size:10px}.top-actions{gap:5px}.profile{display:none}.bell{font-size:18px}.searchbox{width:43px;padding:0 11px}.searchbox input,.searchbox .slash{display:none}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.analytics{grid-template-columns:1fr}.tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.panel-head{display:block}.filters{justify-content:flex-start;margin-top:12px}.filters select{min-width:92px;flex:1}.settings-grid{grid-template-columns:1fr}.chart-card{height:225px}}
 @media(max-width:430px){.top{padding:8px 10px}.wrap{padding:10px}.metric{height:85px}.metric-value{font-size:20px}.metric-icon{height:38px;width:34px;font-size:21px}.metric-foot{font-size:8px}.metric-label{font-size:9px}.tab{font-size:10px}.tab span{margin-right:4px}.panel-head h2{font-size:16px}}
+
+/* Compact, never-cropped Target card */
+.side .target{min-height:0;flex-shrink:0;padding:12px 16px 13px;border-radius:17px;margin-top:auto;overflow:visible}
+.side .target .rocket{font-size:22px;line-height:1.1}
+.side .target .hint{font-size:11px;margin-top:4px}
+.side .target strong{font-size:20px;margin:4px 0;line-height:1.18}
+.side .target small{font-size:10.5px;line-height:1.4;display:block}
+.side .target .target-track{height:8px;margin-top:10px}
+.side .target .target-track i{min-width:0}
+.side .target .target-track + div{font-size:9px!important;margin-top:5px!important}
+.side .divider{margin:12px 3px 10px}
+.side .nav button{padding:10px 12px}
+.side .quick button{padding:7px 11px}
+.side .side-foot{padding-top:9px;font-size:9px;line-height:1.4}
+@media(max-height:770px){.side{overflow-y:auto}.side .target{margin-top:12px}}
 </style>
 </head>
 <body>
@@ -95,6 +111,8 @@
 </div></main>
 </div>
 <script>
+/* Keep the address bar at the requested clean URL, without tracking parameters. */
+try{if(location.pathname.replace(/\/+$/,"")==="/crm"){let u=new URL(location.href);for(const k of [...u.searchParams.keys()])if(k.startsWith("utm_"))u.searchParams.delete(k);const next="/crm"+(u.searchParams.toString()?"?"+u.searchParams.toString():"")+u.hash;if(next!==location.pathname+location.search+location.hash)history.replaceState(history.state,"",next);}}catch(_e){}
 (function(){
 'use strict';
 var SHEET='1-viq_BU0QHCrdj-IlK0DRttU46vTlwPvnRka20FrMV0', BASE='https://docs.google.com/spreadsheets/d/'+SHEET+'/edit', KEY='sharvix.crm.oauth_client_id';
